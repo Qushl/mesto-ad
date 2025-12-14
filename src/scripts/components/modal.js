@@ -27,3 +27,4 @@ export const setCloseModalWindowEventListeners = (modalWindow) => {
     }
   });
 }
+
