@@ -4,3 +4,5 @@
 ![изображение live-server](image.png)
 Live-server является расширением VSCode
 
+для публикации: git push origin main
+ссылка: https://github.com/Qushl/mesto-production

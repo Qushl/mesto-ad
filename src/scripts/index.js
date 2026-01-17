@@ -70,7 +70,11 @@ const logoElement = document.querySelector(".header__logo");
 const deleteConfirmationModalWindow = document.querySelector(".popup_type_remove-card");
 const deleteConfirmationForm = deleteConfirmationModalWindow.querySelector(".popup__form");
 
+// Запись Id
 let userId = null;
+
+// Запись удаляемой карточки
+let currentCardToDelete = null;
 
 const handlePreviewPicture = ({ name, link }) => {
   imageElement.src = link;
@@ -157,9 +161,6 @@ const handleCardFormSubmit = (evt) => {
       closeModalWindow(cardFormModalWindow);
     });
 };
-
-
-let currentCardToDelete = null;
 
 const handleDeleteConfirmation = (cardElement) => {
   currentCardToDelete = cardElement;
